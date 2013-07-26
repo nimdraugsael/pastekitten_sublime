@@ -1,0 +1,8 @@
+[
+    {
+      "keys": ["cmd+alt+9"], "command": "pastekitten_to_clipboard"
+    },
+    {
+      "keys": ["cmd+alt+0"], "command": "pastekitten_to_browser"
+    }
+]

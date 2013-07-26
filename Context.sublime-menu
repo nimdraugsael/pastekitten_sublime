@@ -1,0 +1,8 @@
+[
+    {
+        "command": "pastekitten_to_clipboard"
+    },
+    {
+        "command": "pastekitten_to_browser"
+    }
+]
