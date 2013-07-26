@@ -69,10 +69,10 @@ class PastekittenApiCall(threading.Thread):
   def run(self):
       try:
         data = urllib.urlencode({'contents': self.paste, 'syntax': self.syntax })
-        request = urllib2.Request('http://pastekitten.com:4567/api/paste', data,
+        request = urllib2.Request('http://pastekitten.com/', data,
             headers={"User-Agent": "Sublime Pastekitten"})
         http_file = urllib2.urlopen(request, timeout=self.timeout)
-        self.result = http_file.read()
+        self.result = http_file.geturl()
         return
 
       except (urllib2.HTTPError) as (e):
